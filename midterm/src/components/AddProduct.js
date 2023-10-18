@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./addproduct.css"
 export default function AddProduct() {
     const [formData, setFormData] = useState({
         name: "",

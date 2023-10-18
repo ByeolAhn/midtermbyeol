@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import "./signupuser.css"
 
 export default function SignUpUser() {
     const {
@@ -12,7 +13,7 @@ export default function SignUpUser() {
             alert("The password and confirmation password are not matching.");
             console.log("The password and confirmation password are not matching.");
         };
-        alert(data);
+        alert(`First name: ${data.firstname}, Last name: ${data.lastname}, User name: ${data.username}, Email: ${data.email}, Password: ${data.password}, Confirmation Password: ${data.confirmationpassword}`);
         console.log(data);
     };
 
@@ -25,7 +26,7 @@ export default function SignUpUser() {
                 className="hook__input"
                 {...register("firstname", { required: true })}
             />
-            {errors.firstName && (
+            {errors.firstname && (
                 <p className="hook__error">First name is required</p>
             )}
             <label className="hook__text">Last name: </label>
