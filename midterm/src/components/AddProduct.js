@@ -19,6 +19,7 @@ export default function AddProduct() {
         alert(
             `Name: ${formData.name}, Description: ${formData.description}, Category: ${formData.category}, Quantity: ${formData.quantity}, Price: ${formData.price}`
         );
+        console.log(`Name: ${formData.name}, Description: ${formData.description}, Category: ${formData.category}, Quantity: ${formData.quantity}, Price: ${formData.price}`)
     };
     return (
         <form onSubmit={handleSubmit} className="addproduct">
